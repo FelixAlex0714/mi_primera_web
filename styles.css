@@ -1,0 +1,267 @@
+* {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+body {
+    background-color: #F5F5F5;
+}
+
+/* ESTILOS GENERALES */
+
+.fuente-clara {
+    color: #eeeeee;
+  }
+  
+  .fuente-oscura {
+    color: #22211f;
+  }
+  
+  .fuente-acento {
+    color: #b59a61;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*HEADER*/
+
+header {
+    background-color: rgba(34, 33, 31, 0.75);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.logo {
+    display: inline-block;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 50px;
+    font-weight: bold;
+  }
+  
+
+header a i {
+    color: #ffffff;
+    font-size: 2em;
+    padding: 0.5em;
+}
+
+header nav ul {
+    display: flex;
+    gap: 1em;
+    margin-right: 3em;
+}
+
+header nav ul a{
+    color: #ffffff;
+    text-align: center;
+}
+
+header nav {
+    height: 80px;
+    float: right;
+  }
+  
+  nav ul.menu {
+    float: right;
+  }
+  
+  nav ul.menu li {
+    display: flex;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+  
+  nav ul.menu li a {
+    color: #eee;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 7px 7px;
+  }
+
+.yo{
+    height: 255px;
+    width: 192px;
+}
+.foto {
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+}
+
+main {
+    display: block;
+}
+
+.seccion-1 {
+    background-color: #eeeeee;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 2em;
+    text-align: right;
+}
+
+.acerca-de {
+    width: 100%;
+    max-width: 400px;
+    margin: 20px;
+}
+
+.seccion-2 img {
+    width: 100%;
+}
+
+h3 {
+    padding: 10px 20px;
+}
+
+.seccion-3 {
+    display: flex;
+    justify-content: center;
+    padding-left: 2em;
+    padding-bottom: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 1em 20px;
+}
+
+.img-work1, .img-work2, .img-work3 {
+    height: 213px;
+    width: 100%;
+    max-width: 320px;
+    border-radius: 25px;
+    margin: 10px;
+}
+
+footer {
+    clear: both;
+    background-color: #22211f;
+    width: 100%;
+    padding: 25px;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+#footer {
+    display: flex;
+    flex-direction: column;
+}
+
+#footer h3 {
+    color: #b59a61;
+}
+
+#footer nav ul li a {
+    color: #eeeeee;
+}
+
+a i.fa-solid.fa-heart.fixed {
+    position: fixed;
+    bottom: 22px;
+    right: 39px;
+}
+
+.fa-solid {
+    font-weight: 900;
+}
+
+/*MENU*/
+
+#check {
+    display: none;
+}
+
+.checkbtn {
+    font-size: 25px;
+    color: rgb(186, 5, 5);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 768px) {
+    header {
+        background-color: burlywood;
+    }
+
+    .acerca-de {
+        text-align: center;
+    }
+
+    .acerca-imagen {
+        margin-bottom: 40px;
+    }
+
+    h2 .fuente-acento {
+        text-align: center;
+    }
+
+    .checkbtn {
+        display: block;
+    }
+
+    #encabezado ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        text-align: center;
+
+        top: 80px;
+        left: 100%;
+        transition: all 0.5s;
+    }
+
+    .navbar {
+        height: 0vh;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background: #2c3e50;
+        text-align: center;
+    
+        transition: all 0.5s;
+        overflow: hidden;
+      }
+    
+      .navbar ul.menu {
+        float: none;
+        display: block;
+        width: 174px;
+        margin: 0 auto;
+        opacity: 0;
+      }
+    
+      .navbar ul.menu li a:hover {
+        color: #b59a61;
+      }
+      /* ACTIVE */
+      .navbar.active {
+        height: 100vh;
+      }
+    
+      .navbar.active ul.menu {
+        opacity: 1;
+      }
+}
